@@ -1,0 +1,65 @@
+  258  cd lab3
+  259  ls
+  260  cat wildcardex1_command_history.txt
+  261  nano wildcardex1_command_history.txt
+  262  cat wildcardex1_command_history.txt
+  263  clear
+  264  ls
+  265  cd wildcard_lab
+  266  history
+  267  clear
+  268  tree
+  269  ls *.txt
+  270  ls *.log
+  271  ls ?.txt
+  272  cd ..
+  273  mkdir backup
+  274  cd -r wildcard_lab/*.txt backup/
+  275  cp -r wildcard_lab/*.txt backup/
+  276  tree
+  277  cp -r wildcard_lab/???.* backup/
+  278  tree
+  279  rm ?.*
+  280  rm wildcard_lab/?.*
+  281  tree
+  282  rm -r backup/*
+  283  tree
+  284  cd wildcard_lab
+  285  touch file{1,2,3}.txt
+  286  touch {1,2,3}file.txt
+  287  ls file[1-3].txt
+  288  ls [1-3]file.txt
+  289  ls *[1-3]*.txt
+  290  touch wildcardex3_command_history.txt
+  291  history
+  292  history | tail -n 35 > wildcardex3_command_history.txt
+  293  cat wildcardex3_command_history.txt
+  294  cd ..
+  295  clear
+  296  mkdir logs
+  297  cd logs
+  298  touch log2025010{1,2,3,4,5}.txt
+  299  ls log202501*.txt
+  300  ls log2025010[135].txt
+  301  cd ..
+  302  history | tail -n 10 > wildcardex3_command_history.txt
+  303  cat wildcardex3.command_history.txt
+  304  ls
+  305  cat wildcardex3_command_history.txt
+  306  history
+  307  history | tail -n 55 > wildcardex3_command_history.txt
+  308  cat wildcardex3_command_history.txt
+  309  mkdir link_lab
+  310  cd link_lab
+  311  touch original.txt
+  312  echo "This is a original text" > original.txt
+  313  ln -s original.txt symlink.txt
+  314  ln original.txt hardlink.txt
+  315  cat origial.txt
+  316  cat original.txt
+  317  cat symlink.txt
+  318  hardlink.txt
+  319  cat hardlink.txt
+  320  ls -s npcfile.txt npcsymlink.txt
+  321  touch wildcardex4_command_history.txt
+  322  history | tail -n 67 > wildcardex4_command_history.txt

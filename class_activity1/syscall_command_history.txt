@@ -1,0 +1,50 @@
+  207  mkdir class_activity1
+  208  cd class_activity1
+  209  nano print_syscall_linux.c
+  210  gcc print_syscall_linux.c -o print_syscall_linux ./print_syscall_linux
+  211  gcc print_syscall_linux.c -o syscall.c
+  212  gcc syscall.c
+  213  clear
+  214  history
+  215  gcc --version
+  216  cd class_activity1
+  217  nano syscall.c
+  218  nano print_syscall_linux.c
+  219  gcc print_syscall_linux.c -o print_syscall_linux
+  220  ./print_syscall_linux
+  221  echo "This is a test file created at $(date) > result.txt
+  222  ;
+  223  ls
+  224  cd class_activity1
+  225  ls
+  226  cd ..
+  227  rm -r class_activity1
+  228  mkdir class_activity1
+  229  cd class_activity1
+  230  gcc --version
+  231  nano syscall1.c
+  232  gcc -o syscall1.c
+  233  gcc syscall1.c
+  234  gcc syscall1.c -o syscall1./syscall1
+  235  gcc syscall1.c -o syscall1
+  236  ./syscall1
+  237  nano copyfilesyscall.c
+  238  gcc copyfilesyscall.c -o copyfilesyscall
+  239  ./copyfilesyscall
+  240  echo "This is a testing file created at 11/12/2025" > result.txt
+  241  gcc copyfilesyscall.c -o copyfilesyscall
+  242  cat copyresult.txt
+  243  ls
+  244  touch copyresult.txt
+  245  gcc copyfilesyscall.c -o copyfilesyscall
+  246  cat copyresult.txt
+  247  ls
+  248  cat result.txt
+  249  nano copyfilesyscall.c
+  250  gcc copyfilesyscall.c -o copyfilesyscall
+  251  ./copyfilesyscall
+  252  cat copyresult.txt
+  253  touch syscall_command_history.txt
+  254  history | tail -n 50 > /home/yourname/class_activity1/syscall_command_history.txt
+  255  history | tail -n 50 > /home/darapich-nget@MSI/class_activity1/syscall_command_history.txt
+  256  history | tail -n 50 > syscall_command_history.txt

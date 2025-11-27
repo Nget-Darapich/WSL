@@ -1,0 +1,74 @@
+  117  mkdir lab3
+  118  ls
+  119  cd lab3
+  120  mkdir CopyingFolder
+  121  touch copied.txt
+  122  mkdir Documents
+  123  cp copied.txt Documents
+  124  cd Documents
+  125  touch {one,two,three,four,five}.txt
+  126  cd ..
+  127  cp Documents/*.txt CopyingFolder
+  128  tree
+  129  mkdir Desktop
+  130  cp -r CopyingFolder Desktop/
+  131  tree
+  132  cd Documents
+  133  touch {one,two,three,four,five}_document.txt
+  134  echo "1" > one_document.txt
+  135  echo "2" > two_document.txt
+  136  echo "3" > three_document.txt
+  137  echo "4" > four_document.txt
+  138  echo "5" > five_document.txt
+  139  echo {one,two,three,four,five}_document.txt
+  140  tree
+  141  cat one_document.txt
+  142  cat {one,two,three,four,five}_document.txt
+  143  mv one_document.txt document_un.txt
+  144  mv two_document.txt document_deux.txt
+  145  tree
+  146  mv three_document.txt document_trois.txt
+  147  mv four_document.txt document_quatre.txt
+  148  mv five_document.txt document_cinque.txt
+  149  cd ..
+  150  mkdir MoveFolder
+  151  cd Desktop
+  152  mkdir FrenchFolder
+  153  cd ..
+  154  mv -r Documents/document_*.txt MoveFolder/
+  155  mv Documents/document_*.txt MoveFolder/
+  156  tree
+  157  mv MoveFolder/*.txt Desktop/FrenchFolder
+  158  tree
+  159  touch tree_structure_before_remove.txt
+  160  tree > tree_structure_before_remove.txt
+  161  cat tree_structure_before_remove.txt
+  162  cd ..
+  163  rm lab3/Desktop/FrenchFolder/document_deux.txt
+  164  tree
+  165  ls
+  166  cd lab3
+  167  cd Documents
+  168  mkdir EmptyFolder
+  169  touch deletefile.txt
+  170  rm deletefile.txt
+  171  cd EmptyFolder
+  172  touch deletefile.txt
+  173  mkdir DeleteFolder
+  174  rm -r DeleteFolder
+  175  cd ..
+  176  rm -r EmptyFolder
+  177  cd ..
+  178  cd Desktop
+  179  rm -r FrenchFoler/*.txt
+  180  rm -r FrenchFolder/*.txt
+  181  cd ..
+  182  tree
+  183  touch tree_structure_after_remove.txt
+  184  touch wildcardex1_command_history.txt
+  185  tree > tree_structure_after_remove.txt
+  186  cat tree_structure_after_remove.txt
+  187  history > wildecardex1_command_history.txt
+  188  cat wildcardex1_command_history.txt
+  189  rm wildecardex1_command_history.txt
+  190  history > wildcardex1_command_history.txt

@@ -1,0 +1,15 @@
+  344  ls
+  345  mkdir class_activity_2
+  346  cd class_activity_2
+  347  cd ..
+  348  rm class_activity_2
+  349  rm -r class_activity_2
+  350  mkdir class_activity2
+  351  cd class_activity2
+  352  clear
+  353  nano forkchild.c
+  354  gcc -o forkchild forkchild.c
+  355  ./forkchild > result_forkchild.txt
+  356  echo result_forkchild.txt
+  357  nano result_forkchild.txt
+  358  history | tail -n 15 > command_used_forkchild.txt
