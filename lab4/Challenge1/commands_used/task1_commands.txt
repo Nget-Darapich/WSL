@@ -1,0 +1,30 @@
+  153  git pull origin main
+  154  ls
+  155  cd lab4
+  156  mkdir Challenge1
+  157  cd Challenge1
+  158  mkdir original_log
+  159  cd original_log
+  160  nano .
+  161  cat .
+  162  cd ..
+  163  ls
+  164  cd original_log
+  165  ls
+  166  touch access.log
+  167  nano access.log
+  168  cd ..
+  169  mkdir analysis
+  170  mkdir commands_used
+  171  ls original_log | wc -l
+  172  cd original_log
+  173  tree
+  174  cd ..
+  175  ls original_log | wc -l > analysis/task1_basic_stats.txt
+  176  cat analysis/task1_basic_stats.txt
+  177  wc -l original_log/access.log > analysis/task1_basic_stats.txt
+  178  cat analysis/task1_basic_stats.txt
+  179  ls
+  180  tree
+  181  tail -n 5 original_log/access.log > analysis/task1_basic_stats.txt
+  182  history | tail -n 30 > commands_used/task1_commands.txt
