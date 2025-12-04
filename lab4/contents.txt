@@ -1,0 +1,2 @@
+total 0
+-rw-rw-r-- 1 gic-nget-darapich gic-nget-darapich 0 Dec  4 13:32 contents.txt

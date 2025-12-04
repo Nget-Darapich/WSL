@@ -1,0 +1,50 @@
+   93  cd WSL
+   94  ls
+   95  git remote -v
+   96  ls
+   97  rm WSL
+   98  cd WSL
+   99  git -rf .git
+  100  cd ..
+  101  cd WSL
+  102  rm -rf .git
+  103  git init
+  104  git clone https://github.com/Nget-Darapich/WSL.git
+  105  ls
+  106  cd ..
+  107  ls
+  108  mv -r /WSL/WSL .
+  109  mv WSL GitRepo
+  110  ls
+  111  cd GitRepo
+  112  cd WSL
+  113  ls
+  114  mkdir lab4
+  115  tree
+  116  cd lab4
+  117  ls -l > contents.txt
+  118  cat contents.txt
+  119  sort contents.txt >> contents-sorted.txt
+  120  cat contents-sorted.txt
+  121  mkdir Documents
+  122  md Documents
+  123  cd Documents
+  124  touch passwd-last10.txt
+  125  cd ..
+  126  tail -n 10 /etc/passwd > /Documents/passws-last10.txt
+  127  tail -n 10 /etc/passwd > Documents/passws-last10.txt
+  128  cd Documents
+  129  cat passws-last10.txt
+  130  mv passws-last10.txt passwd-last10.txt
+  131  ls
+  132  cd ..
+  133  wc -w < contents.txt >> field2.txt
+  134  ls
+  135  cat field2.txt
+  136  head -n 5 /etc/passwd | sort -r
+  137  head -n 5 /etc/passwd | sort -r > passwd-first5-sorted.txt
+  138  tail -n 9 contents.txt |wc -m > contents-last9-chars.txt
+  139  cat contents-last9-chars.txt
+  140  find /usr/share -type f -name test | wc -l > No-files-named-test.txt
+  141  cat No-files-named-test.txt
+  142  history | tail -n 50 > lab4-command-history.txt
