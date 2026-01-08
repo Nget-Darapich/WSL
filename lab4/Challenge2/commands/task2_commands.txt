@@ -1,0 +1,47 @@
+  623  rm -r commands_used/task2_commands.txt
+  624  tree
+  625  grep -iE 'bot|scan|exploit|curl|wget' access.log > analysis/task3_suspicious_activity.txt
+  626  grep -iE 'bot|scan|exploit|curl|wget' original_log/access.log > analysis/task3_suspicious_activity.txt
+  627  cat analysis/task3_suspicious_activity.txt
+  628  grep -E '"GET /(wp-admin|admin|\.git)' original_log/access.log >> analysis/task3_suspicious_activity.txt
+  629  grep '?cmd=' original_log/access.log >> analysis/task3_suspicious_activity.txt
+  630  cat analysis/task3_suspicious_activity.txt
+  631  history | tail -n 50 > commands_used/task3_commands.txt
+  632  tree
+  633  ls
+  634  cd WSL
+  635  cd lab4
+  636  cd Challenge1
+  637  tree
+  638  cd WSL
+  639  cd lab4/Challenge1
+  640  tree
+  641  awk '{print $1}' original_log/access.log | sort | uniq -c | sort -nr | head -5 > analysis/task4_top_ips.txt
+  642  awk '{print $1}' original_log/access.log | sort | uniq -c | sort -nr | head -5 >> analysis/task4_top_ips.txt
+  643  awk -F'[:\\[]' '{print $2}' original_log/access.log | sort | uniq -c | sort -nr >> analysis/task4_top_ips.txt
+  644  awk -F'"' '{print $2}' original_log/access.log | awk '{print $2}' | sort | uniq -c | sort -nr | head -10 >> analysis/task4_top_ips.txt
+  645  awk -F'[:\\[ ]' '{minute = $4 ":" $5 ":" $6; print $1 ":" minute}' original_log/access.log | sort | uniq -c | awk '$1 > 10 {print $0}' >> analysis/task4_top_ips.txt
+  646  nano task4_top_ips.txt
+  647  tree
+  648  nano analysis/task4_top_ips.txt
+  649  cat analysis/task4_top_ips.txt
+  650  history | tail -n 50 > commands_used/task4_commands.txt
+  651  cat commands_used/task4_commands.txt
+  652  cd ..
+  653  mkdir Challenge2
+  654  cd Challenge2
+  655  cd .. 
+  656  tree
+  657  cd Challenge2
+  658  mkdir data
+  659  mkdir results
+  660  mkdir commands
+  661  tree
+  662  cd data
+  663  touch employees.txt
+  664  nano employees.txt
+  665  cd ..
+  666  grep "department:IT" data/employees.txt > results/task1_IT_staff.txt
+  667  history | tail -n 40 > commands/task1_commands.txt
+  667  cut -d',' -f2 data/employees.txt | cut -d':' -f2 > results/task2_all_emails.txt
+  668  history | tail -n 45 > commands/task2_commands.txt

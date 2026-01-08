@@ -1,0 +1,50 @@
+  582  ls
+  583  cd ..
+  584  ls
+  585  rm -r lab4
+  586  ls
+  587  git remote -v
+  588  git pull origin main
+  589  ls
+  590  git add .
+  591  git commit -m "class_activity4"
+  592  git push origin main
+  593  openssl rand -base64 32
+  594  clear
+  595  ls
+  596  cd WSL
+  597  ls
+  598  cd ..
+  599  rm -r lab2
+  600  ls
+  601  cd WSL
+  602  ls
+  603  cd ..
+  604  rm -r lab3
+  605  cd WSL
+  606  ls
+  607  cd lab4
+  608  ls
+  609  cd ..
+  610  git pull origin main
+  611  ls
+  612  cd lab4
+  613  ls
+  614  cd Challenge1
+  615  tree
+  616  cd analysis
+  617  cat task2*
+  618  cd ..
+  619  history | tail -n 50 > commands_used/task2_commands.txt
+  620  cat commands_used/task2_commands.txt
+  621  history | tail -n 100 > commands_used/task2_commands.txt
+  622  cat commands_used/task2_commands.txt
+  623  rm -r commands_used/task2_commands.txt
+  624  tree
+  625  grep -iE 'bot|scan|exploit|curl|wget' access.log > analysis/task3_suspicious_activity.txt
+  626  grep -iE 'bot|scan|exploit|curl|wget' original_log/access.log > analysis/task3_suspicious_activity.txt
+  627  cat analysis/task3_suspicious_activity.txt
+  628  grep -E '"GET /(wp-admin|admin|\.git)' original_log/access.log >> analysis/task3_suspicious_activity.txt
+  629  grep '?cmd=' original_log/access.log >> analysis/task3_suspicious_activity.txt
+  630  cat analysis/task3_suspicious_activity.txt
+  631  history | tail -n 50 > commands_used/task3_commands.txt
