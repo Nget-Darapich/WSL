@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Extracting system information
+CURRENT_USER=$(whoami)
+LOGIN_TIME=$(who -u | grep "$CURRENT_USER" | awk '{print $3, $4}')
+FULL_DATE=$(date "+%A, %d %B %Y (%T)")
+
+echo "------------------------------"
+echo "Logged in as : $CURRENT_USER"
+echo "Login Date/Time: $LOGIN_TIME"
+echo "Current System Time: $FULL_DATE"
+echo "------------------------------"

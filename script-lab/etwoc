@@ -1,0 +1,5 @@
+#!/bin/bash
+a=$1
+b=$2
+sum=$(echo "$a + $b" | bc)
+echo "The sum of real numbers $a and $b is: $sum"

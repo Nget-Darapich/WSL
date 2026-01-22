@@ -1,0 +1,5 @@
+#!/bin/bash
+a=$1
+b=$2
+div=$((a / b))
+echo "The result of $a divided by $b is: $div"

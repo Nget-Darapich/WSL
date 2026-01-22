@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Prompt the user for the file path
+echo -n "Enter the file path: "
+read file_path
+
+# 1. Check if the file exists
+if [ -e "$file_path" ]; then
+    echo "$file_path passwords are enabled."
+
+    # 2. Check if the file is writable
+    if [ -w "$file_path" ]; then
+        echo "You have permissions to edit $file_path"
+    else
+        echo "You do NOT have permissions to edit $file_path"
+    fi
+else
+    echo "File does not exist."
+fi

@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "Enter file or directory name: " NAME
+if [ -f "$NAME" ]; then
+    echo "$NAME is a regular file."
+elif [ -d "$NAME" ]; then
+    echo "$NAME is a directory."
+else
+    echo "$NAME is another type of file or does not exist."
+fi

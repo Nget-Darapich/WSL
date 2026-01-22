@@ -1,0 +1,9 @@
+#!/bin/bash
+NAME=$1
+if [ -f "$NAME" ]; then
+    echo "$NAME is a regular file."
+elif [ -d "$NAME" ]; then
+    echo "$NAME is a directory."
+else
+    echo "Entry is invalid or does not exist."
+fi

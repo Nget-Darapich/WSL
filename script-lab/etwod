@@ -1,0 +1,6 @@
+#!/bin/bash
+a=$1
+b=$2
+# scale=2 ensures we get two decimal places
+div=$(echo "scale=2; $a / $b" | bc)
+echo "The division of $a by $b is: $div"
